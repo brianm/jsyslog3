@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="log" class="ch.qos.logback.classic.net.SyslogAppender">
+        <syslogHost>localhost</syslogHost>
+        <port>10514</port>
+        <facility>USER</facility>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="log" />
+    </root>
+</configuration>
