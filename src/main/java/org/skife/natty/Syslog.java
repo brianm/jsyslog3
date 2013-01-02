@@ -135,16 +135,6 @@ public class Syslog
 //    #define LOG_UUCP        (8<<3)  /* UUCP subsystem */
 //    #define LOG_CRON        (9<<3)  /* clock daemon */
 //    #define LOG_AUTHPRIV    (10<<3) /* authorization messages (private) */
-    /* other codes through 15 reserved for system use */
-//    #define LOG_LOCAL0      (16<<3) /* reserved for local use */
-//    #define LOG_LOCAL1      (17<<3) /* reserved for local use */
-//    #define LOG_LOCAL2      (18<<3) /* reserved for local use */
-//    #define LOG_LOCAL3      (19<<3) /* reserved for local use */
-//    #define LOG_LOCAL4      (20<<3) /* reserved for local use */
-//    #define LOG_LOCAL5      (21<<3) /* reserved for local use */
-//    #define LOG_LOCAL6      (22<<3) /* reserved for local use */
-//    #define LOG_LOCAL7      (23<<3) /* reserved for local use */
-
 
     public static enum Facility
     {
@@ -192,34 +182,34 @@ public class Syslog
         public abstract int constant();
     }
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_USER")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_USER;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_DAEMON")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_DAEMON;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL0")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL0;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL1")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL1;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL2")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL2;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL3")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL3;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL4")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL4;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL5")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL5;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL6")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL6;
 
-    @JniField(flags = {FieldFlag.CONSTANT}, accessor = "LOG_LOCAL7")
+    @JniField(flags = {FieldFlag.CONSTANT})
     public static int LOG_LOCAL7;
 
 //    #define LOG_PID         0x01    /* log the pid with each message */

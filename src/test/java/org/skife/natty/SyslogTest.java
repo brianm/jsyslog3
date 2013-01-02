@@ -12,5 +12,6 @@ public class SyslogTest
         Syslog.openlog(SyslogTest.class.getName(), EnumSet.of(Syslog.LogOption.PERROR), Syslog.Facility.USER);
         Syslog.notice("hello notice");
         Syslog.debug("hello debug");
+        Syslog.error("hello error");
     }
 }
